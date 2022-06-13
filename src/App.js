@@ -3,6 +3,7 @@ import './App.css';
 // import Display from '../components/display.js'
 import React, {useState} from 'react'
 import AddItem from './components/addItem';
+import { Display } from './components/display';
 
 
 
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <div className="container">
-        
+        <Display list={transaction}/>
         <AddItem add = {addTransaction}/>
     </div>
   );

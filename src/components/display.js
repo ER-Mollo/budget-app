@@ -1,14 +1,25 @@
 import React from "react";
+import '../css/display.css'
 import AddItem from "./addItem";
 
 function Display(props){
     return(
         <div>
-            {props.list.map((item) => (
+            {props.list.map((items) => (
                 <div>
-                    <h1>{AddItem.amount}</h1>
-                    <h1>{AddItem.item}</h1>
-                    <h1>{AddItem.transactionType}</h1>
+                    <div className="transaction-item">
+                        <div>
+                            <h1>{items.amount}</h1>
+                        </div>
+                        <div>
+                            <h1>{items.item}</h1>
+                        </div>
+                        <div>
+                            <h1>{items.transactionType}</h1>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
             ))}
             
