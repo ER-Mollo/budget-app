@@ -16,12 +16,14 @@ function AddItem(props){
         const collectionRef = collection(db,"transaction");
 
         const transaction = {
-            item:item,
-            amount:amount,
+            item:item ,
+            amount:amount ,
             transactionType: transactionType,
         };
 
         addDoc(collectionRef, transaction).then(()=>{
+        
+
             alert("Added successfully")
         }).catch((err)=>{
             console.log(err);
