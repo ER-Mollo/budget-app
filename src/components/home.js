@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import AddItem from "./addItem";
 import {Display} from "./display";
-import {BudgetBalance} from './balance'
+import {BudgetBalance} from './balance';
+import '../css/login.css';
 
 function Home(props){
 
