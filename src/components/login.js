@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom'
 import {Link} from 'react-router-dom'
 import {signInWithEmailAndPassword} from 'firebase/auth';
 import {auth} from '../config/firebase';
-import '../css/login.css'
+import '../css/login.css';
 
 
 function Login(){
@@ -25,15 +25,27 @@ function Login(){
         
     })
     return (
-        <div className="container">
-            <h1>Login</h1>
-            <input type="email" placeholder="Enter your mail" onChange={(e) => setEmail(e.target.value)}/><br></br>
-            <input type="password" placeholder="Enter your password" onChange={(e) => setPassword(e.target.value)}/>
-            <button style={btn} onClick={login}>Login</button>
-            <span>Don't have an account</span>
-            <span>
-                <Link to='/sign-up'>Create account here</Link>
-            </span>
+        <div className='main'>
+            <div className='top'>
+
+            </div >
+            <div className='bottom'>
+                <div className="container">
+                    <div className='inputs'>
+                        <h1>Welcome Back</h1>
+
+                        <input type="email" placeholder="Enter your mail" onChange={(e) => setEmail(e.target.value)}/><br></br>
+                        <input type="password" placeholder="Enter your password" onChange={(e) => setPassword(e.target.value)}/>
+                    </div>
+                
+                    <button style={btn} onClick={login}>Login</button><br></br>
+                    <span>Don't have an account?</span>
+                    <span>
+                        <Link to='/sign-up'>Create account here</Link>
+                    </span>
+                
+                </div>
+            </div>
         </div>
     )
 }

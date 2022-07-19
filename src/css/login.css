@@ -1,4 +1,49 @@
-.container{
+.main{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    
+}
+.bottom{
     align-items: center;
+    padding: 5% 35%;
+    text-align: center;
+}
+.top{
+    width:100%;
+    height: 100%;
+    background-image: url('../img/image1.jpg');
+    background-size: cover;
+}
+.container .inputs{
+    padding-bottom: 10px;
+    
+}
+.container h1{
+    padding-bottom:10% ;
+    color: rgb(65, 76, 179);
+}
+.link{
+    padding: 10px;
+}
+.container{
     padding-top: 10%;
+    align-items: center;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 15px 10px 15px 5px grey;
+}
+.container button{
+    width: 30%;
+    background-color: rgb(65, 76, 179);
+    color: white;
+    height: 10%;
+    border: none;
+    border-radius: 20px;
+}
+.container button:hover{
+    box-shadow: 9px 8px 15px 5px rgb(60, 60, 97);
+}
+.container input{
+    background-color: rgb(195, 195, 223);
+    box-shadow: 1px 4px 6px 0px rgb(60, 60, 97);
 }

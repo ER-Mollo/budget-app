@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import AddItem from "./addItem";
 import {Display} from "./display";
 import {BudgetBalance} from './balance';
-import '../css/login.css';
+
 
 function Home(props){
 
@@ -26,7 +26,7 @@ function Home(props){
 
     })
     return(
-        <div className="container">
+        <div className="container" style={{height:"800px"}}>
             <BudgetBalance expense={expense} income={income}/>
             <Display list={props.list}/>
             <AddItem add = {props.add}/>
